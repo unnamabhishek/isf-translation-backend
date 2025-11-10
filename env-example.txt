@@ -1,0 +1,23 @@
+# Copy this file to .env.local and fill in your credentials
+
+# LiveKit Configuration
+LIVEKIT_URL=wss://your-livekit-instance.livekit.cloud
+LIVEKIT_API_KEY=your_livekit_api_key
+LIVEKIT_API_SECRET=your_livekit_api_secret
+
+# Azure Speech Service Configuration
+# Get these from Azure Portal -> Speech Services -> Keys and Endpoint
+AZURE_SPEECH_KEY=your_azure_speech_key
+AZURE_SPEECH_REGION=centralindia  # e.g., eastus, westus2, southeastasia
+
+# Optional Azure STT segmentation tweaks (ms)
+AZURE_STT_SILENCE_MS=350
+AZURE_STT_MAX_MS=4500
+
+# LiteLLM Translation Gateway (proxying GPT-4.1/GPT-5 models)
+LITELLM_API_BASE=https://your-litellm-gateway.example.com/v1
+LITELLM_API_KEY=your_litellm_api_key
+LITELLM_MODEL=gpt-4.1
+
+# Default target language voice (hi-IN | te-IN)
+DEFAULT_TARGET_LANGUAGE=hi-IN
